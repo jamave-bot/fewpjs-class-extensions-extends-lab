@@ -14,7 +14,7 @@ class Polygon{
 
 class Triangle extends Polygon{
     get isValid(){
-        let sortedArr = this.sides.sort( function( a , b){
+        let sortedArr = this.sides.sort(( a , b)=>{
             if(a > b) return 1;
             if(a < b) return -1;
             return 0;
